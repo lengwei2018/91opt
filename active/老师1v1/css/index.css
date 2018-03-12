@@ -1,0 +1,42 @@
+@charset "utf-8";
+.icon-view:before {
+  content: "\e6f9";
+}
+.layout {
+  width: 100%;
+  position: relative;
+}
+.layout img {
+  width: 100%;
+}
+html {
+  background-color: #efefef;
+}
+.qr-box {
+  background-color: #fff;
+  padding: 0.06666667rem;
+  border-radius: 0.05333333rem;
+  position: absolute;
+  top: 5.6rem;
+  width: 5.33333333rem;
+  height: 5.33333333rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 1px 26px -1px #b85d23;
+}
+.qr-text {
+  position: absolute;
+  top: 13.53333333rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 0.61333333rem;
+  color: #ba0000;
+}
+.name {
+  -webkit-user-select: none;
+}

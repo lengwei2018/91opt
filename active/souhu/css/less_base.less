@@ -1,0 +1,41 @@
+//less 公共变量部分
+@font: 75rem;
+.font-size(@size) {
+  [data-dpr='1'] & {
+    font-size: round(@size/ 2) * 1px;
+  }
+  [data-dpr='2'] & {
+     font-size: @size*1px;
+   }
+  [data-dpr='3'] & {
+    font-size: round(@size * 3 / 2) * 1px;
+  }
+
+}
+.shandong{
+  animation:shandong 1.5s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}

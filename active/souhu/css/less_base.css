@@ -1,0 +1,25 @@
+.shandong {
+  animation: shandong 1.5s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}

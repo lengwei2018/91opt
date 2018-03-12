@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="lib/flexible.js"></script>
+    <script src="lib/flexible_css.js"></script>
+    <title>淘股吧</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" charset="utf-8" src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+    <!--<link rel="stylesheet" href="lib/layer_flex.css">-->
+</head>
+<body>
+<div class="layout">
+    <div class="box">
+    <img src="images/banner1.jpg" class="img">
+        <a class="box_a1" id="btn">我要领取</a>
+    </div>
+    <img src="images/banner2.jpg" class="img">
+    <div class="qr_bk">
+        <div class="qr-text qr-text1 qr-text4"><img src="images/btn-img.png"><p style="-webkit-user-select:text" id="qrText1">ZQT80886</p></div>
+    <div class="bt">
+        <div class="bt1"><span>第1步：</span><a class="bt_a1 qr-btn any1" data-clipboard-action="copy" data-clipboard-target="#qrText1">点击一键复制微信号</a></div>
+        <div class="bt2">第2步：打开微信，添加好友领取金股池</div>
+    </div>
+    </div>
+
+    <div class="sel2_t">
+        <h3 class="h3">9月龙虎榜精选牛股</h3>
+        <table>
+            <tr><th>股票代码</th><th>股票名称</th><th>推荐时间</th><th>最大涨幅</th></tr>
+            <tr><td>603559</td><td>中通国脉</td><td>9月21日</td><td>72.71%</td></tr>
+            <tr><td>000792</td><td>盐湖股份</td><td>9月11日</td><td>56.67%</td></tr>
+            <tr><td>002192</td><td>融捷股份</td><td>9月01日</td><td>52.25%</td></tr>
+            <tr><td>000762</td><td>西藏矿业</td><td>9月11日</td><td>33.16%</td></tr>
+        </table>
+    </div>
+    <div class="box_p2">*注：过往案例不代表未来收益</div>
+
+    <div class="qr_bk">
+        <div class="qr-text qr-text1"><img src="images/btn-img.png"><p style="-webkit-user-select:text" id="qrText2">ZQT80886</p></div>
+        <div class="bt">
+            <div class="bt1"><span>第1步：</span><a class="bt_a1 qr-btn any1" data-clipboard-action="copy" data-clipboard-target="#qrText2">点击一键复制微信号</a></div>
+            <div class="bt2">第2步：打开微信，添加好友领取金股池</div>
+        </div>
+    </div>
+
+    <div class="box2 box2_top">
+    <div class="box_cen">
+        <h3 class="h3">最新实战案例</h3>
+        <div class="box_ct">
+        <p class="b_ct1"><span>【股票名称】<em>中通国脉</em></span><span>【推荐时间】<em>2017年9月21日</em></span></p>
+        <p>【推荐理由】<em>华泰系实力游资抢筹入场，构成“一大带四小”强势拉升型格局</em></p>
+        </div>
+        <img src="images/fm1.jpg">
+    </div>
+    </div>
+
+    <div class="box2 box3_top">
+        <div class="box_cen">
+            <div class="box_ct">
+                <p class="b_ct1"><span>【股票名称】<em>盐湖股份</em></span><span>【推荐时间】<em>2017年9月11日</em></span></p>
+                <p>【推荐理由】<em>机构+游资联合行动，形成双轮驱动，股价借势启动上升行情</em></p>
+            </div>
+            <img src="images/fm2.jpg">
+        </div>
+    </div>
+
+    <div class="qr_bk qr_bk2">
+        <div class="qr-text qr-text1"><img src="images/btn-img.png"><p style="-webkit-user-select:text" id="qrText3">ZQT80886</p></div>
+        <div class="bt">
+            <div class="bt1"><span>第1步：</span><a class="qr-btn bt_a1 any1" data-clipboard-action="copy" data-clipboard-target="#qrText3">点击一键复制微信号</a></div>
+            <div class="bt2">第2步：打开微信，添加好友领取金股池</div>
+        </div>
+    </div>
+    <img src="images/footer.jpg" class="img img10">
+</div>
+
+<!--弹层-->
+<div id="failPop" class="success-mask">
+    <div class="content">
+        <div class="close_btn"></div>
+        <div class="qr-text qr-tex3"><p style="-webkit-user-select:text" id="qrText4">ZQT80886</p></div>
+        <div class="fap_t2">
+            <div class="box_t1">
+                <p>第1步</p>
+                <a class="qr-btn any1" data-clipboard-action="copy" data-clipboard-target="#qrText4">点击一键复制微信号</a>
+            </div>
+        </div>
+        <div class="fap_t3">第2步：打开微信，添加好友领取金股池</div>
+    </div>
+    </div>
+<!--底部栏-->
+<div class="b-fixed clearfix">
+    <div class="b_f1"><span class="name1">微信号</span><div class="name2" id="qrText5"  style="-webkit-user-select:text"><i></i><p>ZQT80886</p></div><span class="name3 qr-btn any1 any3" data-clipboard-action="copy" data-clipboard-target="#qrText5">一键复制微信号</span></div>
+    <div class="b_f2"><span>打开微信，添加好友领取金股池</span></div>
+</div>
+    <script src="lib/jquery-2.1.1.min.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/clipboard.js/1.7.0/clipboard.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/layer.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+</body>
+</html>

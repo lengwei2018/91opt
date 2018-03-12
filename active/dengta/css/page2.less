@@ -1,0 +1,249 @@
+@import "less_base";
+.pulse{
+  animation:changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes changecolor {
+  from {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+
+  10% {
+    color: #ff0;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+
+  20% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    color: #f0f;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  40% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    color: #ff0;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  60% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.header{
+  height: 685/@font;
+  background:#fff38c url("../images/bgtwo(1).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.add-qr{
+  height: 416/@font;
+  background:#fff38c url("../images/bgtwo(2).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+  .weixin{
+    position: absolute;
+    bottom:10/@font;
+    left: 150/@font;
+    width: 200/@font;
+    height: 80/@font;
+  }
+  .qr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 360/@font;
+    height: 100/@font;
+    font-size: 60/@font;
+    font-weight: 600;
+    text-indent:116/@font;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+  }
+}
+.old-data{
+  height: 827/@font;
+  background:#fff38c url("../images/bgtwo(3).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+
+.choice{
+
+  height: 573/@font;
+  background:#fff38c url("../images/bgtwo(4).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  background-color: #fbeadc;
+  padding: 115/@font 10/@font 10/@font;
+  h3{
+    font-size: 46/@font;
+    height: 88/@font;
+    line-height: 88/@font;
+    color: rgb(136, 75, 27);
+    font-weight: bold;
+    text-align: center;
+  }
+  table{
+    border: 2px solid #806956;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  tr:nth-child(1){
+    background-color: #806956;
+    color: #fff;
+  }
+  th{
+    text-align: center;
+    font-weight: 600;
+  }
+  tr{
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    height: 76/@font;
+    td:nth-child(4){
+      color: red;
+    }
+  }
+  .tip{
+    color: red;
+    .font-size(28);
+    line-height: 80/@font;
+  }
+}
+
+
+
+
+.footer{
+  height: 658/@font;
+  background:#fff38c url("../images/bgtwo(5).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+  .weixin{
+    position: absolute;
+    top:330/@font;
+    left: 150/@font;
+    width: 200/@font;
+    height: 80/@font;
+  }
+  .qr{
+    position: absolute;
+    top: 146/@font;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 360/@font;
+    height: 100/@font;
+    line-height: 100/@font;
+    font-size: 60/@font;
+    font-weight: 600;
+    text-indent:116/@font;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+  }
+}
+
+.fixed-weixin{
+  position: fixed;
+  top: 34%;
+  right: 30/@font;
+  width: 150/@font;
+  height: 150/@font;
+  img{
+    width: 100%;
+  }
+  span{
+    position: absolute;
+    background-color: #ff0600;
+    color: #fff;
+    font-size: 30/@font;
+    font-weight: 600;
+    width: 40/@font;
+    height:40/@font;
+    line-height: 40/@font;
+    text-align: center;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+}
+
+
+.fail-pop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.fail-content{
+  background:url("../images/layer.png") no-repeat top center;
+  background-size: 100% 100%;
+  width: 678/@font;
+  height: 941/@font;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  img{
+    width: 100%;
+  }
+  .weixin{
+    position: absolute;
+    bottom:110/@font;
+    right: 75/@font;
+    width: 180/@font;
+    height: 180/@font;
+  }
+  .qr{
+    position: absolute;
+    top: 390/@font;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 360/@font;
+    height: 100/@font;
+    line-height: 100/@font;
+    font-size: 64/@font;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .close-btn{
+    position: absolute;
+    width: 100/@font;
+    height: 100/@font;
+    top: -20/@font;
+    right: 0;
+  }
+}
+
+.stop{
+  -webkit-user-select:none;
+}

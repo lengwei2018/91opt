@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "less_base";
+.icon-view:before { content: "\e6f9"; }
+.layout{
+  width: 100%;
+  position: relative;
+  img{
+    width: 100%;
+  }
+}
+html{
+  background-color: #efefef;
+}
+.qr-box{
+  background-color: #fff;
+  padding: 5/@font;
+  border-radius: 4/@font;
+  position: absolute;
+  top: 420/@font;
+  width: 400/@font;
+  height: 400/@font;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 1px 26px -1px #b85d23;
+}
+
+.qr-text{
+  position: absolute;
+  top:1015/@font;
+  height: 60/@font;
+  line-height: 60/@font;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 46/@font;
+  color: rgb(186, 0, 0);
+}
+.name{
+  -webkit-user-select: none;
+}

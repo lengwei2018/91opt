@@ -1,0 +1,57 @@
+.pulse1 {
+  animation: pulse 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.shandong {
+  animation: shandong 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}

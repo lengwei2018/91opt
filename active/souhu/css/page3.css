@@ -1,0 +1,170 @@
+.shandong {
+  animation: shandong 1.5s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes changecolor {
+  from {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    color: #fff;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+}
+html {
+  background-color: #b51b21;
+}
+header {
+  height: 12.88rem;
+  background: url("../images/tuiguang1.jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr {
+  height: 5.13333333rem;
+  background: url("../images/tuiguang2.jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr .weixin {
+  position: absolute;
+  bottom: 0.26666667rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.add-qr .qr {
+  position: absolute;
+  top: 1.30666667rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.66666667rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.46666667rem;
+  color: #a31e31;
+}
+.choice {
+  height: 12.48rem;
+  background: url("../images/tuiguang3.jpg") no-repeat top center;
+  background-size: 100% 100%;
+}
+.price {
+  height: 6.76rem;
+  background: url("../images/tuiguang4.jpg") no-repeat top center;
+  background-size: 100% 100%;
+}
+.footer {
+  height: 7.58666667rem;
+  background: url("../images/tuiguang5.jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.footer .weixin {
+  position: absolute;
+  top: 3.97333333rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.footer .qr {
+  position: absolute;
+  top: 1.73333333rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.53333333rem;
+  height: 1.33333333rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.33333333rem;
+  color: #a31e31;
+}
+.g-fixed {
+  height: 2.4rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f9c911;
+  z-index: 99;
+  padding: 0.26666667rem;
+}
+.g-fixed .weixinbtn {
+  margin-top: 0.13333333rem;
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  position: relative;
+}
+.g-fixed .weixinbtn a {
+  display: inline-block;
+}
+.g-fixed .weixinbtn img {
+  width: 100%;
+}
+.g-fixed .weixinbtn span {
+  position: absolute;
+  background-color: #ff0600;
+  color: #fff;
+  font-size: 0.4rem;
+  font-weight: 600;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  text-align: center;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.g-fixed .qr-info {
+  width: 7.46666667rem;
+  font-size: 0.37333333rem;
+  color: #a31e31;
+  font-weight: bold;
+  line-height: 1.35;
+  text-align: center;
+}
+.g-fixed .qr-info span {
+  font-size: 0.48rem;
+}
+.g-fixed .qr-info .qr {
+  font-size: 0.61333333rem;
+}

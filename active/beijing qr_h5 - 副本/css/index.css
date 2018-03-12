@@ -1,0 +1,23 @@
+@charset "utf-8";
+.icon-view:before {
+  content: "\e6f9";
+}
+.layout {
+  width: 100%;
+  position: relative;
+}
+.layout img {
+  width: 100%;
+}
+.qr_box {
+  background-color: #fff;
+  padding: 0.06666667rem;
+  border-radius: 0.05333333rem;
+  position: absolute;
+  top: 34%;
+  width: 4.8rem;
+  height: 4.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

@@ -1,0 +1,139 @@
+.shandong {
+  animation: shandong 1.5s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes changecolor {
+  from {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    color: #fff;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.header {
+  height: 7.98666667rem;
+  background: url("../images/bgone(1).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr {
+  height: 6.24rem;
+  background: url("../images/bgone(2).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.weixin {
+  position: absolute;
+  bottom: 0.53333333rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.qr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.06666667rem;
+  color: #a31e31;
+}
+.choice {
+  height: 7.45333333rem;
+  background-size: 100% 100%;
+  background-color: #fbeadc;
+  padding: 0.13333333rem;
+}
+.choice h3 {
+  font-size: 0.61333333rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  color: #884b1b;
+  font-weight: bold;
+  text-align: center;
+}
+.choice table {
+  border: 2px solid #806956;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.choice tr:nth-child(1) {
+  background-color: #806956;
+  color: #fff;
+}
+.choice th {
+  text-align: center;
+  font-weight: 600;
+}
+.choice tr {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  height: 1.01333333rem;
+}
+.choice tr td:nth-child(4) {
+  color: red;
+}
+.choice .tip {
+  color: red;
+  line-height: 1.06666667rem;
+}
+[data-dpr='1'] .choice .tip {
+  font-size: 14px;
+}
+[data-dpr='2'] .choice .tip {
+  font-size: 28px;
+}
+[data-dpr='3'] .choice .tip {
+  font-size: 42px;
+}
+.footer {
+  padding: 0.4rem 0.13333333rem;
+  background-color: #F8EAC3;
+  font-size: 0.33333333rem;
+  color: #383736;
+  text-align: center;
+  line-height: 0.45333333rem;
+}

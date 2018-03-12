@@ -1,0 +1,295 @@
+.pulse1 {
+  animation: pulse 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.shandong {
+  animation: shandong 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes changecolor {
+  from {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    color: #ff0;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  20% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    color: #f0f;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  40% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    color: #ff0;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  60% {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    color: #fff;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.header {
+  height: 9.13333333rem;
+  background: #fff38c url("../images/bgtwo(1).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr {
+  height: 5.54666667rem;
+  background: #fff38c url("../images/bgtwo(2).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr .weixin {
+  position: absolute;
+  bottom: 0.13333333rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.add-qr .qr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.8rem;
+  height: 1.33333333rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.54666667rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.old-data {
+  height: 11.02666667rem;
+  background: #fff38c url("../images/bgtwo(3).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.choice {
+  height: 7.64rem;
+  background: #fff38c url("../images/bgtwo(4).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  background-color: #fbeadc;
+  padding: 1.53333333rem 0.13333333rem 0.13333333rem;
+}
+.choice h3 {
+  font-size: 0.61333333rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  color: #884b1b;
+  font-weight: bold;
+  text-align: center;
+}
+.choice table {
+  border: 2px solid #806956;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.choice tr:nth-child(1) {
+  background-color: #806956;
+  color: #fff;
+}
+.choice th {
+  text-align: center;
+  font-weight: 600;
+}
+.choice tr {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  height: 1.01333333rem;
+}
+.choice tr td:nth-child(4) {
+  color: red;
+}
+.choice .tip {
+  color: red;
+  line-height: 1.06666667rem;
+}
+[data-dpr='1'] .choice .tip {
+  font-size: 14px;
+}
+[data-dpr='2'] .choice .tip {
+  font-size: 28px;
+}
+[data-dpr='3'] .choice .tip {
+  font-size: 42px;
+}
+.footer {
+  height: 8.77333333rem;
+  background: #fff38c url("../images/bgtwo(5).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.footer .weixin {
+  position: absolute;
+  top: 4.4rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.footer .qr {
+  position: absolute;
+  top: 1.94666667rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.8rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.54666667rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+.fixed-weixin {
+  position: fixed;
+  top: 34%;
+  right: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+}
+.fixed-weixin img {
+  width: 100%;
+}
+.fixed-weixin span {
+  position: absolute;
+  background-color: #ff0600;
+  color: #fff;
+  font-size: 0.4rem;
+  font-weight: 600;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  text-align: center;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.fail-pop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.fail-content {
+  background: url("../images/layer.png") no-repeat top center;
+  background-size: 100% 100%;
+  width: 9.04rem;
+  height: 12.54666667rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.fail-content img {
+  width: 100%;
+}
+.fail-content .weixin {
+  position: absolute;
+  bottom: 1.46666667rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.fail-content .qr {
+  position: absolute;
+  top: 5.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.8rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.85333333rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.fail-content .close-btn {
+  position: absolute;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  top: -0.26666667rem;
+  right: 0;
+}
+.stop {
+  -webkit-user-select: none;
+}

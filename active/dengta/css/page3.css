@@ -1,0 +1,215 @@
+.pulse1 {
+  animation: pulse 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.shandong {
+  animation: shandong 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes shandong {
+  from {
+    color: #fff;
+  }
+  15% {
+    color: #ff0000;
+  }
+  30% {
+    color: #fff;
+  }
+  45% {
+    color: #ff0000;
+  }
+  60% {
+    color: #fff;
+  }
+  to {
+    color: #fff;
+  }
+}
+.pulse {
+  animation: changecolor 1s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+@keyframes changecolor {
+  from {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  10% {
+    color: #108d1e;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  20% {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    color: #f0f;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  40% {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    color: #0ff;
+    transform: scale3d(1.18, 1.18, 1.18);
+  }
+  60% {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    color: #f00;
+    transform: scale3d(1, 1, 1);
+  }
+}
+html {
+  background-color: #5b2d0b;
+}
+header {
+  height: 8.52rem;
+  background: url("../images/bgthree(1).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr {
+  height: 5.88rem;
+  background: url("../images/bgthree(2).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.add-qr .weixin {
+  position: absolute;
+  bottom: 0.13333333rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.add-qr .qr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.66666667rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.46666667rem;
+  color: #a31e31;
+}
+.choice {
+  height: 15.82666667rem;
+  background: url("../images/bgthree(3).jpg") no-repeat top center;
+  background-size: 100% 100%;
+}
+.footer {
+  height: 7.06666667rem;
+  background: url("../images/bgthree(4).jpg") no-repeat top center;
+  background-size: 100% 100%;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+.footer .weixin {
+  position: absolute;
+  top: 3.86666667rem;
+  left: 2rem;
+  width: 2.66666667rem;
+  height: 1.06666667rem;
+}
+.footer .qr {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.53333333rem;
+  height: 1.33333333rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-indent: 1.33333333rem;
+  color: #a31e31;
+}
+.g-fixed {
+  height: 2.4rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f9c911;
+  z-index: 99;
+  padding: 0.26666667rem;
+}
+.g-fixed .weixinbtn {
+  margin-top: 0.13333333rem;
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  position: relative;
+}
+.g-fixed .weixinbtn a {
+  display: inline-block;
+}
+.g-fixed .weixinbtn img {
+  width: 100%;
+}
+.g-fixed .weixinbtn span {
+  position: absolute;
+  background-color: #ff0600;
+  color: #fff;
+  font-size: 0.4rem;
+  font-weight: 600;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  text-align: center;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.g-fixed .qr-info {
+  width: 7.46666667rem;
+  font-size: 0.37333333rem;
+  color: #a31e31;
+  font-weight: bold;
+  line-height: 1.35;
+  text-align: center;
+}
+.g-fixed .qr-info span {
+  font-size: 0.48rem;
+}
+.g-fixed .qr-info .qr {
+  font-size: 0.61333333rem;
+}
