@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>询价状态</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/state.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>询价状态</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!--股票信息-->
+    <section class="information">
+        <ul class="clearfix">
+            <li>
+                <div class="name f_left">标的股票</div>
+                <div class="value f_right">平安银行 (SZ000001)</div>
+            </li>
+            <li>
+                <div class="name f_left">名义本金</div>
+                <div class="value f_right">100万元</div>
+            </li>
+            <li>
+                <div class="name f_left">行权周期</div>
+                <div class="value f_right">30天</div>
+            </li>
+            <li>
+                <div class="name f_left">到期日期</div>
+                <div class="value f_right">2018-02-22</div>
+            </li>
+            <li>
+                <div class="name f_left">权利金比例</div>
+                <div class="f_right">券商询价中...</div>
+            </li>
+        </ul>
+    </section>
+    <section class="countdown">
+        <div class="center">
+                <span class="time" id="timer">
+                        5:30
+                </span>
+            <div class="bg-rotate-loader"></div>
+        </div>
+        <p>券商询价中预计5分钟，请稍后…</p>
+    </section>
+    <section class="footer clearfix">
+        <button class="search-btn" onclick="javascript:window.location.href='13-result.html';">我要委托</button>
+        <p class="gobackbtn">返回上一步</p>
+        <p class="tip">委托交易需完成认证会员</p>
+        <p class="btn-p">
+            <button class="f-btn">券商助手</button>
+            <button class="f-btn">认证会员</button>
+        </p>
+    </section>
+    <a id="returnBack" href="javascript:history.go(-1)">返回</a>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script>
+    $(function () {
+        var totalSec = 300;
+        var tid = setInterval(function () {
+            totalSec = totalSec - 1;
+            if (totalSec >= 1) {
+                var minutes = parseInt(totalSec / 60 % 60, 10);//计算剩余的分钟
+                var seconds = parseInt(totalSec % 60, 10);//计算剩余的秒数
+                $('#timer').text(minutes + ":" + seconds);
+            } else {
+                // 刷新页面
+            }
+        }, 1000);
+    })
+</script>
+
+</body>
+</html>

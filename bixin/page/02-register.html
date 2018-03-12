@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>注册</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!--内容-->
+    <section class="content">
+        <form>
+            <ul>
+                <li>
+                    <input type="tel" placeholder="请输入手机号">
+                </li>
+                <li>
+                    <input type="text" placeholder="请输入登录密码（请输入6-16位数字或字母）">
+                </li>
+                <li class="verification">
+                    <input type="text" placeholder="请输入验证码">
+                    <button>获取验证码</button>
+                </li>
+                <li class="verification">
+                    <input type="text" placeholder="请输入验证码">
+                    <div class="veri-img">
+                        <img src="../images/demo-yanzheng.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <span class="iconfont icon_select"></span>
+                    <span>我同意最终<a href="#" class="orange">『会员注册协议』</a></span>
+                </li>
+            </ul>
+            <button disabled class="reg-btn">注册</button>
+        </form>
+        <div class="tip"><a href="#">已有帐号登录</a></div>
+    </section>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+
+</body>
+</html>

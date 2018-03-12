@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <title>订单支付</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/pay-fail.css"/>
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>订单支付</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <section class="content">
+         <img class="fail-img" src="../images/pay-fail.png" alt="">
+        <p class="title">支付失败</p>
+        <p><span id="countDown">5</span>秒后将自动跳转到订单页面</p>
+        <p>未跳转请点击“返回”</p>
+    </section>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script>
+    var countdown=5;//设置秒s
+    settime()
+    function settime(){
+        if (countdown == 0) {
+            //手动跳转
+            alert('跳转');
+            return;
+        } else {
+            $("#countDown").html( countdown )
+            countdown--;
+        }
+        setTimeout(function() {
+                settime() }
+            ,1000)
+    }
+</script>
+</body>
+
+</html>

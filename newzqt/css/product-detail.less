@@ -1,0 +1,236 @@
+@import "less_base";
+@import "top1";
+
+a{
+  display: block;
+}
+body,html, .layout {
+  background-color: #f9fbfd;
+}
+
+.banner{
+  background-color: #fff;
+  margin-bottom: 10/@font;
+  img{
+    width: 100%;
+    height: 200/@font;
+  }
+  .info{
+    padding: 8/@font 15/@font 12/@font;
+    .price{
+      .font-size(32);
+      color: #000000;
+      margin-bottom: 5/@font;
+      span:nth-child(2){
+        color:#ff5056;
+      }
+    }
+    .time{
+      .font-size(28);
+      color: rgba(64,64,74,0.54);
+    }
+    .btn{
+      width: 100/@font;
+      height: 30/@font;
+      border-radius: 15/@font;
+      background: #FF5056;
+      text-align: center;
+      line-height: 30/@font;
+      color: #fff;
+      .font-size(28);
+      margin-top: 10/@font;
+    }
+  }
+}
+.nav{
+  background-color: #fff;
+  margin-bottom: 10/@font;
+  li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 76/@font;
+    padding-top: 15/@font;
+    .icon-img{
+      width: 46/@font;
+      height: 46/@font;
+      text-align: center;
+      background-color: #F7F7F7;
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-block;
+      img{
+        width: 100%;
+      }
+    }
+    .name{
+      line-height: 46/@font;
+      display: inline-block;
+      vertical-align: top;
+      color: #40404A;
+      .font-size(32);
+      margin-left: 5/@font;
+    }
+    &:nth-child(2n+1){
+      border-right: 1px solid #F0F0F0;;
+    }
+    &:nth-child(1){
+      border-bottom: 1px solid #F0F0F0;;
+    }
+    &:nth-child(2){
+      border-bottom: 1px solid #F0F0F0;;
+    }
+  }
+}
+.title{
+  height: 48/@font;
+  line-height: 48/@font;
+  width: 206/@font;
+  margin: 0 auto;
+  .font-size(32);
+  color: #40404A;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  &:before{
+    content: "";
+    width:55/@font ;
+    height: 2/@font;
+    position: absolute;
+    background: #EBEBEB;
+    top: 50%;
+    left: 0;
+  }
+  &:after{
+    content: "";
+    width:52/@font ;
+    height: 2/@font;
+    position: absolute;
+    background: #EBEBEB;
+    top: 50%;
+    right: 0;
+  }
+}
+.highlight{
+  background-color: #fff;
+  margin-bottom: 10/@font;
+  padding: 0 15/@font;
+  li{
+    position: relative;
+    padding-bottom: 15/@font;
+  }
+  .icon-img{
+    position: absolute;
+    top: 6/@font;
+    left: 0/@font;
+    width: 24/@font;
+    height: 24/@font;
+    img{
+      width: 100%;
+    }
+  }
+  .info{
+    width: 306/@font;
+    float: right;
+    .name{
+      color: #40404A;
+      line-height: 18/@font;
+      margin-bottom: 6/@font;
+      .font-size(28);
+    }
+    .des{
+      line-height: 1.6;
+      color: rgba(64,64,74,0.54);
+      .font-size(24);
+    }
+  }
+}
+.review{
+  background-color: #fff;
+  margin-bottom: 10/@font;
+  padding: 0 15/@font;
+  .info{
+    padding-top: 15/@font;
+    .img-box{
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+    .des{
+      padding: 5/@font 0 10/@font;
+      color: #79797B;
+      line-height: 1.6;
+      .font-size(28);
+    }
+  }
+}
+.team{
+  background-color: #fff;
+  padding: 0 15/@font 52/@font;
+  li{
+    float: left;
+    width: 170/@font;
+    margin-top: 15/@font;
+    &:nth-child(2n){
+      float: right;
+    }
+  }
+  .img-box{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .info{
+    .font-size(28);
+    color: #79797B;
+    line-height: 1.8;
+    .name{
+      color: #312D3B;
+      margin-right: 5/@font;
+    }
+    .num{
+      letter-spacing: -0.5px;
+    }
+  }
+}
+
+.foottoll {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 888;
+  box-shadow: 0 1px 10px 1px #D7D7D7;
+  .left {
+    width: 32%;
+    color: #312D3B;
+    background: #FFFFFF;
+    height: 52/@font;
+    .font-size(32);
+  }
+  .right {
+    width: 68%;
+    background: #FF5056;
+    color: #fff;
+    float: left;
+    height: 52/@font;
+    .font-size(32);
+  }
+}
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

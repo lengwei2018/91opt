@@ -1,0 +1,358 @@
+@import "less_base";
+@import "top1";
+.icon_left_arrow:before{content: "\e6b1";}
+.icon_select:before{content: "\e6dd";}
+@font: 37.5rem;
+.icon {
+  width: 32/@font; height: 32/@font;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 5/@font;
+}
+.icon_select:before { content: "\e6dd"}
+.icon_continue_hover:before { content: "\e698"}
+body, html {
+  background-color: #f2f2f2;
+}
+/*title样式*/
+.title{
+  .font-size(28);
+  color: rgba(0,0,0,0.54);
+  letter-spacing: 0;
+  height: 44/@font;
+  line-height: 44/@font;
+  padding: 0 16/@font;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+}
+/*订单详情*/
+.details{
+  ul{
+    background-color: #fff;
+  }
+  .item{
+    height: 51/@font;
+    line-height: 51/@font;
+    margin-left: 16/@font;
+    padding-right: 16/@font;
+    border-bottom: 1px solid #e7e7e7;
+    .font-size(30);
+  }
+  .name{
+    color: rgba(49,45,59,0.54);
+  }
+  .price .num{
+      color:#F64D41;
+  }
+  .number{
+    border-bottom: 0;
+  }
+}
+/*确认个人信息*/
+.confirm{
+  ul{
+    background-color: #fff;
+  }
+  input{
+    padding-left: 4/@font;
+    width: 150/@font;
+  }
+  li{
+    height: 51/@font;
+    line-height: 51/@font;
+    margin-left: 16/@font;
+    padding-right: 16/@font;
+    border-bottom: 1px solid #e7e7e7;
+    .font-size(30);
+  }
+  .tel{
+    width: 260/@font;
+    color: rgba(49, 45, 59, 0.54);
+  }
+  input{
+    height: 30/@font;
+  }
+  button{
+    margin-top: 8/@font;
+    .font-size(30);
+    color: rgba(49,45,59,0.38);
+    line-height: 36/@font;
+    height: 36/@font;
+    width: 120/@font;
+    background-image: linear-gradient(-179deg, rgba(13,122,218,0.82) 0%, #005CAD 100%);
+    background: #548BEE;
+    border-radius: 4/@font;
+    color: #fff;
+    float: right;
+  }
+  button:disabled{
+    background: #EBEBEB;
+    color: rgba(49,45,59,0.38);
+  }
+}
+/*提示信息*/
+.prompt{
+  .font-size(28);
+  color: rgba(49,45,59,0.54);
+  padding:10/@font 15/@font 10/@font;
+  min-height: 44/@font;
+  background-color: #fff;
+  .iconfont{
+    font-size: 30/@font;
+    line-height: 40/@font;
+    margin-right: 6/@font;
+  }
+  a{
+    color: #548BEE;
+  }
+  .icon_continue_hover{
+    color: #548BEE;
+  }
+
+}
+/*支付方式*/
+.paytype{
+  li{
+    width: 100%;
+    height: 52/@font;
+    line-height: 52/@font;
+    background-color: #fff;
+    padding: 0 15/@font;
+    border-bottom: 2px solid #e7e7e7;
+    .font-size(32);
+    color: #312D3B;
+  }
+ .iconfont{
+   color: rgba(53,57,66,0.38);
+   font-size: 34/@font;
+ }
+  .icon_continue_hover{
+    color: #548BEE;
+  }
+}
+.iconfont1{
+  .font-size(32);
+  color: #312D3B;
+  height: 52/@font;
+  line-height: 50/@font;
+  &:before{
+    color: #548BEE;
+    font-size: 26/@font;
+    vertical-align: middle;
+    margin-right: 6/@font;
+  }
+}
+.icon_left_arrow:before{
+  color: #D9D9D9;
+}
+.quit_btn{
+  width: 345/@font;
+  height: 52/@font;
+  //background-image: linear-gradient(-179deg, rgba(13,122,218,0.82) 0%, #005CAD 100%);
+  background: #F64D41;
+  border-radius: 4px;
+  display: block;
+  margin: 40/@font auto;
+  .font-size(32);
+  color: #FFFFFF;
+}
+.copyright{
+  color: #999999;
+  text-align: center;
+  margin-bottom: 30/@font;
+}
+
+/*已经购买订单提示*/
+.model_fail{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.6);
+  top: 0;
+  display: block;
+  z-index: 889;
+}
+
+.content_model{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  .font-size(32);
+  .title{
+    line-height: 45/@font;
+    border-bottom: 1px solid #ccc;
+    height: 50/@font;
+    padding: 0 15/@font;
+    .font-size(32);
+    color: #312D3B;
+    a{
+      font-size: 30/@font;
+      color:rgba(49,45,59,0.54);
+    }
+  }
+  .text{
+    padding: 16/@font;
+    .font-size(28);
+    line-height: 26/@font;
+    span{
+      color: #ff0000;
+    }
+  }
+  .btn{
+    background: #FF5056;
+    width: 100%;
+    height: 50/@font;
+    .font-size(36);
+    color: #FFFFFF;
+  }
+  }
+
+
+
+
+.filter-disabled {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.filter-box {
+  position: relative;
+  width: 130/@font;
+  float: right;
+}
+
+.filter-box select {
+  display: none;
+}
+
+.filter-text {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-text input {
+  .font-size(32);
+}
+
+.filter-text .filter-title {
+  width: 100%;
+  height: 36/@font;
+  line-height: 36/@font;
+  border: 0;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  //border: 1px solid #e6e6e6;
+  padding: 0 10/@font;
+  padding-right: 1.5em;
+  text-align: right;
+}
+
+.filter-list {
+  display: none;
+  //width: 100%;
+  max-height: 300/@font;
+  background-color: #fff;
+  position: absolute;
+  top: 42/@font;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #e6e6e6;
+  overflow: auto;
+}
+
+.filter-list li.filter-null a {
+  color: #d2d2d2;
+  padding: 0 10/@font;
+}
+
+.filter-list li a {
+  display: block;
+  line-height: 36/@font;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  .font-size(28);
+  padding: 0 20/@font;
+}
+
+.filter-list li:hover {
+  background-color: #548BEE;
+}
+
+.filter-list li.filter-selected {
+  background-color: #548BEE;
+}
+
+.filter-list li.filter-selected a{
+  display: block;
+  color: #fff;
+}
+
+.filter-list li.filter-disabled {
+  background-color: #fff;
+}
+
+.filter-list li.filter-disabled a{
+  display: block;
+  color: #d2d2d2;
+}
+
+.filter-list li.filter-disabled:hover a {
+  cursor: not-allowed!important;
+  background-color: #fff;
+}
+
+
+
+.icon_left_arrow {
+  right: 0;
+  top: 0;
+  transition: all .2s;
+  position: absolute;
+}
+
+.icon_left_arrow.filter-show {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.filter-list::-webkit-scrollbar {
+  width: 4/@font;
+  height: 4/@font;
+}
+
+.filter-list::-webkit-scrollbar-track {
+  background: #fff
+}
+
+.filter-list::-webkit-scrollbar-thumb {
+  background: #CBCBCB;
+}
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

@@ -1,0 +1,131 @@
+@import "less_base";
+@import "top1";
+.icon_coin:before {content: "\e614";}
+body,html, .layout {
+  background-color: #f9fbfd;
+}
+.layout {
+  .font-size(24);
+}
+.information{
+  background-color: #fff;
+  padding-left: 15/@font;
+  .font-size(28);
+  .name{
+    color:rgba(46, 49, 69, 0.7);
+  }
+  .value{
+    color: #2E3145;
+  }
+  .red-value{
+    color: #FF5230;
+    .font-size(36);
+  }
+  li{
+    height: 44/@font;
+    line-height: 44/@font;
+    padding-right: 15/@font;
+    border-bottom: 1px solid rgba(238, 240, 242, 0.7);
+    &:nth-last-child(1){
+      border-bottom: 0;
+    }
+  }
+}
+.deal{
+  background-color: #fff;
+  margin-top: 10/@font;
+  width: 100%;
+  h3{
+    height: 48/@font;
+    line-height: 48/@font;
+    border-bottom: 1px solid  rgba(238, 240, 242, 0.7);
+    padding: 0 15/@font;
+    font-weight: 600;
+    .font-size(30);
+  }
+  .icon_coin:before{
+    color: #ff5230;
+    font-size: 1.4em;
+    vertical-align: top;
+    margin-right: 5/@font;
+  }
+  .text{
+    padding:0 15/@font;
+    .font-size(28);
+    color: #2E3145;
+  }
+  .black{
+    color: #000;
+  }
+  .orange{
+    color: #FF5230;
+    .font-size(36);
+  }
+  .name{
+    color: rgba(46, 49, 69, 0.7);
+  }
+  .value{
+    color: #2E3145;
+
+  }
+  input{
+    margin-top: 12/@font;
+    text-align: right;
+  }
+  input::-webkit-input-placeholder{
+    color: rgba(46, 49, 69, 0.3);
+  }
+  .red-value{
+    color: #E82F2F;
+    .font-size(36);
+  }
+  li {
+    height: 44/@font;
+    line-height: 44/@font;
+    padding-right: 6/@font;
+    border-bottom: 1px solid rgba(238, 240, 242, 0.7);
+    overflow: hidden;
+    &:nth-last-child(1) {
+      border-bottom: 0;
+    }
+    .iconfont:before{
+      font-size: 1.6em;
+      color: rgba(46, 49, 69, 0.3);
+      vertical-align: middle;
+    }
+    .icon_continue:before{
+      color: #FF5230;
+    }
+    a{
+      color: #FF5230;
+    }
+  }
+
+}
+.search-btn{
+  background: #FF5230;
+  color: #FFFFFF;
+  .font-size(28);
+  width: 345/@font;
+  height: 50/@font;
+  margin-bottom: 15/@font;
+  border-radius:3/@font;
+  display: block;
+  margin: 30/@font auto;
+}
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

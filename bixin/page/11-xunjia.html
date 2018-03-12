@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>标股</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/xunjia.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>标股</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!-- 头部-->
+    <setion class="head">
+        <div class="left-side">
+            <p class="name">标的股票</p>
+            <input id="sharesInput" class="value" type="text" placeholder="请输入股票代码/全拼/首字母">
+        </div>
+        <!--搜索弹窗-->
+        <section class="search-item" style="display: none">
+            <table>
+                <tr>
+                    <th>股票代码</th>
+                    <th>股票名称</th>
+                    <th></th>
+                </tr>
+                <tr class="item">
+                    <td class="num">000300</td>
+                    <td class="name">昆明机床</td>
+                    <td><img src="../images/icon-left.png" alt=""></td>
+                </tr>
+                <tr class="item">
+                    <td class="num">000300</td>
+                    <td class="name">昆明机床</td>
+                    <td><img src="../images/icon-left.png" alt=""></td>
+                </tr>
+                <tr class="item">
+                    <td class="num">000300</td>
+                    <td class="name">昆明机床</td>
+                    <td><img src="../images/icon-left.png" alt=""></td>
+                </tr>
+                <tr class="item">
+                    <td class="num">300001</td>
+                    <td class="name">乐视网</td>
+                    <td><img src="../images/icon-left.png" alt=""></td>
+                </tr>
+            </table>
+            <p class="search-close">关闭</p>
+        </section>
+        <div class="right-side">
+            <p class="name">当前价</p>
+            <input class="value" type="text" placeholder="暂无价格" readonly>
+        </div>
+
+    </setion>
+
+    <!--名义本金-->
+    <section class="money">
+        <div class="top clearfix">
+            <div class="name f_left">名义本金</div>
+            <div class="value f_right">
+                <input id="moneyInput" class="f_left" type="number" placeholder="自定义金额1万整数起"><span
+                    class="f_left unit">万元</span>
+            </div>
+            <img class="icon-question" data-msg="买入期权的总金额，最低50万起且必须位一万的整数倍递增。" src="../images/question.png" alt="有疑问">
+        </div>
+        <div class="bottom">
+            <ul id="money" class="f_right">
+                <li data-num="50">50万</li>
+                <li data-num="100">100万</li>
+                <li data-num="200">200万</li>
+            </ul>
+        </div>
+    </section>
+    <!--行权周期-->
+    <section class="cycle">
+        <div class="top clearfix">
+            <div class="name f_left">行权周期</div>
+            <ul id="cycle" class="f_right">
+                <li class="current">1个月</li>
+                <li>3个月</li>
+                <li>6个月</li>
+            </ul>
+            <img class="icon-question" data-msg="<p>1、即用户行使权利的时间周期，用户可以在行权周期内任意时间自主行权，或到期自动行权。</p>
+<p>2、交易日10:00前申请行权，当天交易并不可撤回；10:00后申请行权，隔天开盘成交，休市前可撤销，休市后不可撤销；</p>
+<p>3、所选行权周期越长，所需的权利金越高。</p>" src="../images/question.png" alt="有疑问">
+        </div>
+        <div class="bottom">
+            <div class="name f_left">到期日期</div>
+            <div class="f_right">2018-02-22</div>
+            <img class="icon-question" data-msg="期权到期日如果是非交易日则提前至到期前最后一个交易日。" src="../images/question.png" alt="有疑问">
+        </div>
+    </section>
+    <button class="search-btn" onclick="javascript:window.location.href='13-result.html';">券商在线询价</button>
+    <p class="tip">注册会员只获得一次券商报价，获取更多请联系券商助手 委托交易需要完成用户信息认证</p>
+    <!--<p class="tip">委托交易需完成认证会员</p>--><!--注册后-->
+    <p class="btn-p">
+        <button class="f-btn">券商助手</button>
+        <button class="f-btn">认证会员</button>
+    </p>
+    <div class="mask" style="display: none">
+        <div class="content">
+            <h3></h3>
+            <div class="text">
+
+            </div>
+            <span class="close-btn">×</span>
+        </div>
+    </div>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+<script src="../js/biaogu.js"></script>
+</body>
+</html>

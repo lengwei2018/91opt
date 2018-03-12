@@ -1,0 +1,132 @@
+@import "less_base";
+@import "top1";
+.icon_warning:before {
+  content: "\e6fc";
+}
+body,html, .layout {
+  background-color: #f9fbfd;
+}
+.layout {
+  .font-size(24);
+}
+.information{
+  background-color: #fff;
+  padding-left: 15/@font;
+  .font-size(28);
+  .name{
+    color: #2E3145;//rgba(46, 49, 69, 0.7);
+  }
+  .value{
+    color: #2E3145;
+  }
+  .red-value{
+    color: #E82F2F;
+    .font-size(36);
+  }
+  li{
+    height: 44/@font;
+    line-height: 44/@font;
+    padding-right: 15/@font;
+    border-bottom: 1px solid rgba(238, 240, 242, 0.7);
+  }
+}
+.countdown{
+  background-color: #fff;
+  margin-bottom: 10/@font;
+  width: 100%;
+  padding-top: 20/@font;
+  height: 167/@font;
+  position: relative;
+  .center {
+    position: relative;
+    width: 100/@font;
+    height: 100/@font;
+    line-height: 100/@font;
+    text-align: center;
+    color: #ff5230;
+    font-size: 24/@font;
+    margin: 0 auto 15/@font;
+  }
+  .font{
+    text-align: center
+  }
+  .font span {
+    color:#FF5230;
+    margin-right: 4/@font;
+  }
+  .bg-rotate-loader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    border: 6px solid #fdf8f6;
+    border-top-color: #fcbcae;
+    border-radius: 50%;
+    animation: loader-rotate 1s linear infinite;
+  }
+  P{
+    text-align: center;
+  }
+
+  @keyframes loader-rotate {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); }
+  }
+}
+
+.footer{
+  background-color: #fff;
+  padding: 15/@font 15/@font;
+  .search-btn{
+    background: #FF5230;
+    color: #FFFFFF;
+    .font-size(28);
+    width: 345/@font;
+    height: 50/@font;
+    margin-bottom: 15/@font;
+    border-radius:3/@font;
+  }
+  .gobackbtn{
+    text-align: center;
+    .font-size(26);
+    color: rgba(91, 90, 90, 0.5);
+  }
+  .btn-p{
+    text-align: center;
+  }
+  .tip{
+    padding: 10/@font 15/@font 0;
+    text-align: center;
+    .font-size(26);
+    color: rgba(91, 90, 90, 0.5);
+    line-height: 18/@font;
+  }
+  .f-btn{
+    width: 70/@font;
+    height: 22/@font;
+    border: 1px solid #FF5230;
+    border-radius: 2/@font;
+    .font-size(26);
+    color: #E82F2F;
+    margin: 15/@font;
+  }
+}
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

@@ -1,0 +1,213 @@
+.icon_right_arrow:before {
+  content: "\e6d9";
+}
+header {
+  width: 100%;
+  height: 1.2rem;
+  background-image: linear-gradient(0deg, #4C4C50 1%, #2F3032 100%);
+  background-color: #4c4c50;
+  line-height: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+}
+[data-dpr='1'] header {
+  font-size: 16px;
+}
+[data-dpr='2'] header {
+  font-size: 32px;
+}
+[data-dpr='3'] header {
+  font-size: 48px;
+}
+header .icon_right_arrow {
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+[data-dpr='1'] header .icon_right_arrow {
+  font-size: 15px;
+}
+[data-dpr='2'] header .icon_right_arrow {
+  font-size: 30px;
+}
+[data-dpr='3'] header .icon_right_arrow {
+  font-size: 45px;
+}
+header .icon_right_arrow:before {
+  color: #fff;
+  margin: 0 0.10666667rem 0 0.2rem;
+  margin-top: 0.04rem;
+  vertical-align: middle;
+}
+[data-dpr='1'] header .icon_right_arrow:before {
+  font-size: 22px;
+}
+[data-dpr='2'] header .icon_right_arrow:before {
+  font-size: 44px;
+}
+[data-dpr='3'] header .icon_right_arrow:before {
+  font-size: 66px;
+}
+header h3 {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.top_zhanwei {
+  height: 1.2rem;
+}
+a {
+  display: block;
+}
+body,
+html,
+.layout {
+  background-color: #f9fbfd;
+}
+.blur {
+  width: 100%;
+  margin-top: -1.62666667rem;
+  filter: url(blur.svg#blur);
+  /* FireFox, Chrome, Opera */
+  -webkit-filter: blur(12px);
+  /* Chrome, Opera */
+  -moz-filter: blur(12px);
+  -ms-filter: blur(12px);
+  filter: blur(12px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=12, MakeShadow=false);
+  /* IE6~IE9 */
+}
+.banner {
+  background: #FFFFFF;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+.banner .banner-img {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+}
+.banner .logo-img {
+  width: 1.33333333rem;
+  position: absolute;
+  top: 0.32rem;
+  left: 0.48rem;
+}
+.banner .logo-img img {
+  width: 100%;
+}
+.banner .head-img {
+  position: absolute;
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 2.02666667rem;
+  left: 3.68rem;
+  box-shadow: 0px 12px 24px -1px rgba(193, 193, 193, 0.7);
+}
+.banner .head-img img {
+  width: 4rem;
+  margin-left: -0.66666667rem;
+  margin-top: -0.13333333rem;
+}
+.banner .info {
+  text-align: center;
+  margin-top: 0.96rem;
+}
+.banner .name {
+  color: #40404A;
+  font-weight: 600;
+}
+[data-dpr='1'] .banner .name {
+  font-size: 16px;
+}
+[data-dpr='2'] .banner .name {
+  font-size: 32px;
+}
+[data-dpr='3'] .banner .name {
+  font-size: 48px;
+}
+.banner .num {
+  color: #79797B;
+  margin: 0.21333333rem auto;
+}
+[data-dpr='1'] .banner .num {
+  font-size: 12px;
+}
+[data-dpr='2'] .banner .num {
+  font-size: 24px;
+}
+[data-dpr='3'] .banner .num {
+  font-size: 36px;
+}
+.banner .num img {
+  width: 0.26666667rem;
+  vertical-align: middle;
+  margin-right: 0.13333333rem;
+  margin-top: -0.02666667rem;
+}
+.banner .num span {
+  letter-spacing: -0.5px;
+}
+.section {
+  margin-top: 0.26666667rem;
+  background-color: #fff;
+}
+.section h3 {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  padding: 0 0.4rem;
+  color: #40404A;
+  font-weight: 600;
+  border-bottom: 1px solid #F0F0F0;
+}
+[data-dpr='1'] .section h3 {
+  font-size: 16px;
+}
+[data-dpr='2'] .section h3 {
+  font-size: 32px;
+}
+[data-dpr='3'] .section h3 {
+  font-size: 48px;
+}
+.section .img-box {
+  padding: 0.4rem 0.4rem 0;
+}
+.section .img-box img {
+  width: 100%;
+}
+.section .info {
+  padding: 0.4rem;
+  color: #79797B;
+  line-height: 1.6;
+}
+[data-dpr='1'] .section .info {
+  font-size: 14px;
+}
+[data-dpr='2'] .section .info {
+  font-size: 28px;
+}
+[data-dpr='3'] .section .info {
+  font-size: 42px;
+}
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1, 1, 1, 0.5);
+  z-index: 999;
+}

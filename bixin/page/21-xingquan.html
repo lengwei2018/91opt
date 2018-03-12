@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>询价状态</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/xingquan.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>询价状态</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!--股票信息-->
+    <section class="information">
+        <ul class="clearfix">
+            <li>
+                <div class="name f_left">标的股票</div>
+                <div class="value f_right">平安银行 (SZ000001)</div>
+            </li>
+            <li>
+                <div class="name f_left">名义本金</div>
+                <div class="value f_right">100万元</div>
+            </li>
+            <li>
+                <div class="name f_left">行权周期</div>
+                <div class="value f_right">30天</div>
+            </li>
+            <li>
+                <div class="name f_left">到期日期</div>
+                <div class="value f_right">2018-02-22</div>
+            </li>
+            <li>
+                <div class="name f_left">期权浮盈</div>
+                <div class="red-value f_right">2000.00元</div>
+            </li>
+            <li>
+                <div class="name">* 结算盈利以券商行权成交后<span style="color: #FF5230;">“结算确认书”</span>为准</div>
+            </li>
+        </ul>
+    </section>
+    <section class="deal">
+        <h3 class="title"><span class="iconfont icon_coin"></span>执行价格</h3>
+        <ul class="text" id="execute">
+            <li>
+                <div class="name f_left">市价交易</div>
+                <div class="value f_right">
+                    <span class="black">现价：</span><span class="orange">12.00+8.01%</span>
+                    <span class="iconfont icon_continue"></span>
+                </div>
+            </li>
+            <li>
+                <div class="name f_left">指价交易</div>
+                <div class="value f_right">
+                    <input type="text" placeholder="指定价不可低于设置价">
+                    <span class="iconfont icon_select"></span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <button class="search-btn" onclick="javascript:window.location.href='13-result.html';">行权</button>
+    <a id="returnBack" href="javascript:history.go(-1)">返回</a>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script>
+    $('#execute').on("click","li",function () {
+        $('#execute').find(".iconfont").attr("class","iconfont icon_select");
+        $(this).find(".iconfont").attr("class","iconfont icon_continue");
+    })
+</script>
+
+</body>
+</html>

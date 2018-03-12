@@ -1,0 +1,120 @@
+@import "less_base";
+@import "top1";
+
+a{
+  display: block;
+}
+body,html, .layout {
+  background-color: #f9fbfd;
+}
+.product{
+  background-color: #fff;
+  padding: 0 15/@font 15/@font;
+  margin-bottom: 10/@font;
+  .title{
+    height: 60/@font;
+    line-height: 60/@font;
+    .name{
+      .font-size(36);
+      color: #40404A;
+    }
+    .btn{
+      border: 1px solid rgba(64,64,74,0.17);
+      border-radius: 100px;
+      width: 80/@font;
+      height: 30/@font;
+      line-height: 30/@font;
+      text-align: center;
+      margin-top: 15/@font;
+      color: #79797B;
+      .font-size(28);
+    }
+  }
+  .product-img{
+    width: 345/@font;
+    height: 130/@font;
+    overflow: hidden;
+    position: relative;
+
+    img{
+      width: 100%;
+    }
+    .mask{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,0.35);
+      .font-size(32);
+      padding: 0 10/@font;
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
+  .product-info{
+    li{
+      float: left;
+      height: 65/@font;
+      padding-top: 12/@font;
+      text-align: center;
+      width: 33.33%;
+      position: relative;
+    }
+    .line:before{
+      position: absolute;
+      content:'';
+      top: 16/@font;
+      right: 0;
+      width: 1px;
+      height: 30/@font;
+      background: #F0F0F0;
+    }
+    .num{
+      color: #40404A;
+      .font-size(32);
+    }
+    .name{
+      color: rgba(64,64,74,0.54);
+      .font-size(28);
+    }
+  }
+  .tip{
+    width: 100%;
+    height: 24/@font;
+    line-height: 24/@font;
+    background: #F7F7F7;
+    padding: 0 10/@font;
+    span:nth-child(1){
+      color: #79797B;
+
+    }
+    span:nth-child(2){
+      color: #FF5056;
+      float: right;
+    }
+  }
+}
+
+
+
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

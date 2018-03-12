@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>会员认证</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/authen.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>会员认证</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!-- 头部-->
+    <section class="head">
+        <ul class="clearfix">
+            <li class="iconfont icon_certification current">身份证认证</li>
+            <li class="iconfont icon_bankcard current">银行卡认证</li>
+            <li class="iconfont icon-right">完成认证</li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class="login">
+            <input type="text" placeholder="请输入真实姓名" maxlength="10">
+        </div>
+        <div class="login">
+            <input type="number" placeholder="请输入帐户开户行" maxlength="18">
+        </div>
+        <div class="login">
+            <input type="number" placeholder="请输入银行卡号" maxlength="18">
+        </div>
+        <div class="login">
+            <input type="number" placeholder="请输入家庭地址" maxlength="18">
+        </div>
+        <div class="risk">
+            <span class="iconfont icon_select"></span>
+            <span>我已详细阅读并同意<a href="#" class="orange">『风险揭示书』</a><a href="#" class="orange">『交易委托书』</a></span>
+        </div>
+
+        <button class="login-btn">登录</button>
+        <p class="jump">
+            <a href="#">跳过</a>
+        </p>
+    </section>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+<script src="../js/biaogu.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import "less_base";
+@import "top1";
+
+body,html, .layout {
+  background-color: #f9fbfd;
+
+}
+.layout {
+  .font-size(28);
+  position: relative;
+}
+.head{
+  padding:0 35/@font;
+  border-top: 1px solid transparent;
+}
+.logo-img{
+  width:130/@font;
+  height: 54/@font;
+  margin: 80/@font auto;
+  img{
+    width: 100%;
+  }
+}
+.login{
+  height: 54/@font;
+  line-height: 54/@font;
+  width: 100%;
+  border-bottom: 1px solid #EEF0F2;
+}
+.login-btn{
+  background: #FF5230;
+  color: #FFFFFF;
+  width: 305/@font;
+  height: 50/@font;
+  .font-size(28);
+  border-radius: 2px;
+  margin: 80/@font auto 30/@font;
+}
+.jump{
+  position: relative;
+  text-align: center;
+  a{
+    margin: 0 15/@font;
+    color: #5B5A5A;
+  }
+}
+.jump:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5/@font;
+  left: 50%;
+  background-color:#d7dadf;
+  width: 1px;
+  height: 12/@font;
+}
+.jump .active{
+  color: #FF5230;
+}
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

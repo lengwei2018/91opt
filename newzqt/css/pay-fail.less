@@ -1,0 +1,43 @@
+@import "less_base";
+@import "top1";
+
+body, html {
+  background-color: #f2f2f2;
+}
+.content{
+  text-align: center;
+  .fail-img{
+    width: 70/@font;
+    height: 70/@font;
+    margin: 60/@font auto 20/@font;
+  }
+  .title{
+    .font-size(48);
+    margin-bottom: 20/@font;
+  }
+  p{
+    .font-size(28);
+    span{
+      margin-right: 0.2em;
+      color: #FF5056;
+      font-weight: 600;
+    }
+  }
+}
+
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

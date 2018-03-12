@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>登录</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!-- 头部-->
+    <section class="head">
+        <div class="logo-img">
+            <img src="../images/icon_login_logo.png" alt="logo">
+        </div>
+        <div class="login">
+            <input type="tel" placeholder="请输入手机号" maxlength="11">
+        </div>
+        <div class="login">
+            <input type="text" placeholder="请输入登录密码">
+        </div>
+        <button class="login-btn">登录</button>
+        <p class="jump">
+            <a class="active" href="#">新用户注册</a>
+            <a href="#">忘记密码</a>
+        </p>
+    </section>
+
+
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+<script src="../js/biaogu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>修改资料</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/jumpto.css">
+    <script src="../js/loading.js"></script>
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>登录</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <div class="container">
+        <div class="center">
+                <span class="time">
+                        5s
+                </span>
+            <div class="bg-rotate-loader"></div>
+        </div>
+        <p class="font"><span class="time">5s</span>后将自动跳转到劵商询价页面</p>
+        <button class="authen-btn">进行会员认证</button>
+        <div class="vip">会员权益</div>
+        <ul class="desc">
+            <li>获取直通劵商报价</li>
+            <li>获取劵商每天5次自动报价</li>
+            <li>获取劵商最优期权费</li>
+            <li>专属劵商助手1v1服务</li>
+        </ul>
+    </div>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+<script>
+    $(function () {
+        var totalSec = 5;
+        var tid = setInterval(function () {
+            totalSec = totalSec - 1;
+
+            if (totalSec >= 1) {
+                $('.time').text(totalSec + 's');
+            } else {
+                // 跳转页面
+            }
+        }, 1000);
+    })
+</script>
+</body>
+</html>

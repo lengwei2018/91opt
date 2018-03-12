@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>询价结果</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>询价结果</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!--股票信息-->
+    <section class="information">
+        <ul class="clearfix">
+            <li>
+                <div class="name f_left">标的股票</div>
+                <div class="value f_right">
+                    <input type="text" placeholder="平安银行 (SZ000001)">
+                    <span class="iconfont icon-xiugai"></span>
+                </div>
+                <!--搜索弹窗-->
+                <section class="search-item" style="display: block">
+                    <table>
+                        <tr><th>股票代码</th><th>股票名称</th><th></th></tr>
+                        <tr class="item"><td class="num">000300</td><td class="name">昆明机床</td><td><img src="../images/icon-left.png" alt=""></td></tr>
+                        <tr class="item"><td class="num">000300</td><td class="name">昆明机床</td><td><img src="../images/icon-left.png" alt=""></td></tr>
+                        <tr class="item"><td class="num">000300</td><td class="name">昆明机床</td><td><img src="../images/icon-left.png" alt=""></td></tr>
+                        <tr class="item"><td class="num">300001</td><td class="name">乐视网</td><td><img src="../images/icon-left.png" alt=""></td></tr>
+                    </table>
+                    <p class="search-close">关闭</p>
+                </section>
+            </li>
+            <li>
+                <div class="name f_left">名义本金</div>
+                <div class="value f_right">
+                    <input type="text" placeholder="100万元">
+                    <span class="iconfont icon-xiugai"></span>
+                </div>
+            </li>
+            <li>
+                <div class="name f_left">行权周期</div>
+                <div class="value f_right">
+                    <input type="text" placeholder="30天">
+                    <span class="iconfont icon-xiugai"></span>
+                </div>
+            </li>
+            <li>
+                <div class="name f_left">到期日期</div>
+                <div class="value f_right">2018-02-22</div>
+            </li>
+            <li>
+                <div class="name f_left">权利金</div>
+                <div class="red-value f_right">8930.00元</div>
+            </li>
+            <li>
+                <div class="name f_left">权利金比例</div>
+                <div class="red-value f_right">8.93%</div>
+            </li>
+        </ul>
+    </section>
+    <section class="uplift">
+        <h3>涨幅盈亏</h3>
+        <div class="content">
+            <table>
+                <tr>
+                    <th>股价</th>
+                    <th>涨幅</th>
+                    <th>盈亏比</th>
+                    <th>盈亏金额</th>
+                </tr>
+                <tr class="red">
+                    <td>7.24</td>
+                    <td>8.87%</td>
+                    <td>0%</td>
+                    <td>8939.00</td>
+                </tr>
+                <tr class="blue">
+                    <td>7.36</td>
+                    <td>10.68%</td>
+                    <td>20%</td>
+                    <td>10716.00</td>
+                </tr>
+                <tr class="red">
+                    <td>7.54</td>
+                    <td>13.38%</td>
+                    <td>50%</td>
+                    <td>13395.00</td>
+                </tr>
+                <tr class="red">
+                    <td>7.84</td>
+                    <td>17.89</td>
+                    <td>100%</td>
+                    <td>17860.0</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="footer">
+        <button id="cancel" class="cancel">取消委托</button>
+        <button id="confirm">我要委托</button>
+    </section>
+    <div class="mask confirm-mask" style="display: none">
+        <div class="content">
+            <h3 class=""><span class="iconfont icon_coin"></span>执行价格</h3>
+            <ul class="text" id="execute">
+                <li class="item">
+                    <div class="name f_left">市价交易</div>
+                    <div class="value f_right">
+                        <span class="black">现价：</span><span class="orange">12.00+8.01%</span>
+                        <span class="iconfont icon_continue"></span>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="name f_left">指价交易</div>
+                    <div class="value f_right">
+                        <input type="text" placeholder="指定价不可低于设置价">
+                        <span class="iconfont icon_select"></span>
+                    </div>
+                </li>
+                <li>
+                    <span id="agree" class="icon_continue iconfont"></span><span>我同意</span><a href="./15-riskprotocol.html">《风险确认书》</a><a href="./14-entrustprotocol.html">《交易委托协议》</a>
+                </li>
+            </ul>
+            <button class="btn">确认委托交易</button>
+            <span class="close-btn">×</span>
+        </div>
+    </div>
+
+    <a id="returnBack" href="javascript:history.go(-1)">返回</a>
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script>
+    if(document.referrer == ""){
+        $(".confirm-mask").show();
+    }
+    // 按钮事件
+    $(".close-btn").click(function () {
+        $(this).parents('.mask').fadeOut();
+    })
+    $("#confirm").click(function () {
+        $(".confirm-mask").fadeIn();
+    })
+    $("#cancel").click(function () {
+        window.history.go(-1);
+    })
+    //执行价格
+    $('#execute').on("click",".item",function () {
+        $('#execute').find(".value .iconfont").attr("class","iconfont icon_select");
+        $(this).find(".value .iconfont").attr("class","iconfont icon_continue");
+    })
+    //同意协议
+    $("#agree").click(function () {
+        var a = $(this).attr('class');
+        console.log(a);
+        var b = 'icon_continue iconfont';
+        var c = 'icon_select iconfont';
+        var d = a==b?c:b;
+        $(this).attr('class',d);
+    })
+
+</script>
+
+
+</body>
+</html>

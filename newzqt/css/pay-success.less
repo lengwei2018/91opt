@@ -1,0 +1,100 @@
+@import "less_base";
+@import "top1";
+
+body, html {
+  background-color: #f2f2f2;
+}
+.content{
+  height: 285/@font;
+  background-color: #fff;
+  .titile{
+    height: 90/@font;
+    padding-top: 30/@font;
+    text-align: center;
+    .font-size(48);
+    color: #312D3B;
+    img{
+      width: 36/@font;
+      height: 36/@font;
+      vertical-align: middle;
+      margin-right: 10/@font;
+    }
+  }
+  .info{
+    margin: 0 20/@font 0 55/@font;
+    position: relative;
+    &:before{
+      content: '';
+      width: 2/@font;
+      height: 120/@font;
+      border-radius: 50%;
+      background-color: #e7e7e8;
+      position: absolute;
+      left: -16/@font;
+      top: 20/@font;
+    }
+    .title{
+      color: #312D3B;
+      .font-size(28);
+      height: 40/@font;
+      line-height: 40/@font;
+      position: relative;
+      &:before{
+        content: '';
+        width: 10/@font;
+        height: 10/@font;
+        border-radius: 50%;
+        background-color: #e7e7e8;
+        position: absolute;
+        left: -20/@font;
+        top: 15/@font;
+      }
+    }
+    .des{
+      color: rgba(49,45,59,0.54);
+      .font-size(24);
+      line-height: 1.5;
+    }
+  }
+}
+.information{
+  width: 334/@font;
+  //height: 224/@font;
+  margin: 20/@font auto;
+  background-color: #fff;
+  padding: 20/@font 15/@font 17/@font;
+  line-height: 26/@font;
+  background-image: url("../images/pay-top-line.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 3/@font;
+  box-shadow: 0 4px 25px 1px rgba(121,121,123,0.17);
+  border-radius: 4px;
+  .font-size(28);
+  .name{
+    color: #79797B;
+  }
+  .des{
+    color: #40404A;
+    float: right;
+  }
+  .price{
+    color: #ff7f83;
+  }
+}
+
+#returnBack {
+  border-radius: 0.43rem 0 0 0.43rem;
+  color: #fff;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding: 0px 0.13rem 0 0.41rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.4rem;
+  position: fixed;
+  right: -1px;
+  bottom: 2.1rem;
+  z-index: 400;
+  background: rgba(1,1,1,0.5);
+  z-index: 999;
+}

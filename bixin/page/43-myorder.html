@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <title>服务主页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/myorder.css">
+</head>
+
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>服务主页</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+
+    <!--导航-->
+    <section class="nav clearfix">
+        <div class="item f_left">
+            <span class="current">待付款</span>
+        </div>
+        <div class="item f_left">
+            <span>待确认</span>
+        </div>
+        <div class="item f_left">
+            <span>待确认</span>
+        </div>
+    </section>
+    <section class="content">
+        <!--已成交-->
+        <div class="already">
+            <div class="list">
+                <p class="title">
+                    <span>平安银行</span>
+                    <span class="f_right">询价中 </span>
+                </p>
+                <div class="details">
+                    <ul class="clearfix">
+                        <li>
+                            <p class="name">申购名义本金：</p>
+                            <p class="value">100万</p>
+                        </li>
+                        <li>
+                            <p class="name">期权费率：</p>
+                            <p class="value">***</p>
+                        </li>
+                        <li>
+                            <p class="name">执行价格：</p>
+                            <p class="value">***</p>
+                        </li>
+                        <li>
+                            <p class="name">行权周期：</p>
+                            <p class="value">***</p>
+                        </li>
+                        <li>
+                            <p class="name">期权费：</p>
+                            <p class="value">8345.00元</p>
+                        </li>
+                        <li>
+                            <p class="name">成交名义本金：</p>
+                            <p class="value">0</p>
+                        </li>
+                        <li>
+                            <p class="name">申购日期：</p>
+                            <p class="value">02-22 09:47:57 至 03-22 09:47:57</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toll">
+                    <p class="f_left explain"><span>说明</span><span class="iconfont icon_query"></span></p>
+                    <span class="btn">取消委托</span>
+                    <span class="btn">继续流程</span>
+                </div>
+            </div>
+        </div>
+        <!--历史委托-->
+        <div class="history">
+            <div class="list">
+                <p class="title">
+                    <span class="icon-mai f_left">买</span>
+                    <span>平安银行</span>
+                    <span class="f_right iconfont icon_left_arrow"></span>
+                    <span class="f_right icon-mai">主动行权</span>
+                </p>
+                <div class="text">
+                    <div class="clearfix price">
+                        <div class="left-side f_left">
+                            <div class="item clearfix">
+                                <p class="name">名义本金：</p>
+                                <p class="value">100万</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="item clearfix">
+                                <p class="name">行权周期：</p>
+                                <p class="value">30天</p>
+                            </div>
+                        </div>
+                        <div class="right-side f_right">
+                            <p class="name">盈亏：</p>
+                            <p class="value red-color">2570.00元</p>
+                        </div>
+                    </div>
+                    <div class="details" hidden>
+                        <ul class="clearfix">
+                            <li>
+                                <p class="name">申购名义本金：</p>
+                                <p class="value">100万</p>
+                            </li>
+                            <li>
+                                <p class="name">成交名义本金：</p>
+                                <p class="value">0</p>
+                            </li>
+                            <li>
+                                <p class="name">申购日期：</p>
+                                <p class="value">02-22 09:47:57</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="toll">
+                        <span class="btn">买入交易达成确认书</span>
+                        <span class="btn">卖出交易达成确认书</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list">
+                <p class="title">
+                    <span class="icon-mai f_left">买</span>
+                    <span>平安银行</span>
+                    <span class="f_right iconfont icon_left_arrow"></span>
+                    <span class="f_right icon-mai">主动行权</span>
+                </p>
+                <div class="text">
+                    <div class="clearfix price">
+                        <div class="left-side f_left">
+                            <div class="item clearfix">
+                                <p class="name">名义本金：</p>
+                                <p class="value">100万</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="item clearfix">
+                                <p class="name">行权周期：</p>
+                                <p class="value">30天</p>
+                            </div>
+                        </div>
+                        <div class="right-side f_right">
+                            <p class="name">盈亏：</p>
+                            <p class="value red-color">2570.00元</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <ul class="clearfix">
+                            <li>
+                                <p class="name">申购名义本金：</p>
+                                <p class="value">100万</p>
+                            </li>
+                            <li>
+                                <p class="name">成交名义本金：</p>
+                                <p class="value">0</p>
+                            </li>
+                            <li>
+                                <p class="name">到期时间：</p>
+                                <p class="value">02-22 09:47:57 至 03-22 09:47:57</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="toll">
+                        <span class="btn">买入确认书</span>
+                        <span class="btn">行权</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--失效委托-->
+        <div class="overdue">
+            <div class="list">
+
+                <p class="title">
+                    <span>平安银行</span>
+                    <span class="f_right">成交失败</span>
+                </p>
+                <div class="details">
+                    <ul class="clearfix">
+                        <li>
+                            <p class="name">申购名义本金：</p>
+                            <p class="value">100万</p>
+                        </li>
+                        <li>
+                            <p class="name">成交名义本金：</p>
+                            <p class="value">0</p>
+                        </li>
+                        <li>
+                            <p class="name">买入价格：</p>
+                            <p class="value">5.83元</p>
+                        </li>
+                        <li>
+                            <p class="name">行权周期：</p>
+                            <p class="value">30天</p>
+                        </li>
+                        <li>
+                            <p class="name">期权费：</p>
+                            <p class="value">8345.00元</p>
+                        </li>
+                        <li>
+                            <p class="name">期权费率：</p>
+                            <p class="value">9.04%</p>
+                        </li>
+                        <li>
+                            <p class="name">申购日期：</p>
+                            <p class="value">02-22 09:47:57</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toll">
+                    <p class="f_left explain"><span>退款说明</span><span class="iconfont icon_query"></span></p>
+                    <span class="btn">重新下单</span>
+                    <span class="btn">删除</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a id="returnBack" href="javascript:history.go(-1)">返回</a>
+</div>
+<script src="../js/isWeiXin.js"></script>
+
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../js/feedback.js"></script>
+
+</body>
+
+</html>

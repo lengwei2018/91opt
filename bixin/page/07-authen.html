@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>会员认证</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/authen.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>会员认证</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+    <!-- 头部-->
+    <section class="head">
+        <ul class="clearfix">
+            <li class="iconfont icon_certification current">身份证认证</li>
+            <li class="iconfont icon_bankcard ">银行卡认证</li>
+            <li class="iconfont icon-right">完成认证</li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class="login">
+            <input type="text" placeholder="请输入真实姓名" maxlength="10">
+        </div>
+        <div class="login">
+            <input type="number" placeholder="请输入有效身份证号" maxlength="18">
+        </div>
+        <div class="tip">请上传身份证 <span>*请按照案例进行拍摄</span></div>
+        <div class="photo-box clearfix">
+            <div class="f_left photo">
+                <div class="img-box">
+                    <img id="zm" src="../images/img_certification_example_Front.png" alt="">
+                    <span class="iconfont icon_camera"></span>
+                </div>
+                <input type="file" style="/* visibility: hidden */width: 50px;height: 50px" capture="camera" accept="image/*" name="" value="" >
+                <p>正面</p>
+            </div>
+            <div class="f_right photo">
+                <div class="img-box">
+                    <img src="../images/img_certification_example_Back.png" alt="">
+                    <span class="iconfont icon_camera"></span>
+                </div>
+                <p>反面</p>
+            </div>
+        </div>
+        <button class="login-btn">登录</button>
+        <p class="jump">
+            <a href="#">跳过</a>
+        </p>
+
+    </section>
+
+
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script>
+    $('.icon_camera').click(function () {
+        wx.chooseImage({
+            count: 1, // 默认9
+            sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+            sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+            success: function (res) {
+                var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+                $("#zm").attr('src',localIds)
+            }
+        });
+
+    })
+
+</script>
+</body>
+</html>

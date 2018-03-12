@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/flexible_css.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/layer_flex.css">
+    <link rel="stylesheet" href="../css/progress.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部部分-->
+    <header id="topFixed">
+        <a href="javascript:history.go(-1)" class="iconfont icon_right_arrow">返回</a>
+        <h3>订单详情</h3>
+    </header>
+    <div id="topZhan" class="top_zhanwei"></div>
+   <section class="head">
+       <h3>委托交易确认进度</h3>
+       <p>Order Details</p>
+   </section>
+    <section class="content success">
+        <div class="top">
+            <h3>
+                <span class="name">委托交易付款</span>
+                <!--<span class="state">未付款</span>-->
+                <span class="state">已付款</span>
+            </h3>
+            <p>委托交易审核通过后，请按照以下帐号付款：</p>
+            <p>开户行：上海市淮海中支行</p>
+            <p>帐号：6226 1234 1234 1234</p>
+            <p>* 付款请备注姓名及手机号</p>
+        </div>
+        <div class="bottom">
+            <h3>
+                <span class="name">委托交易确认</span>
+                <!--注释得为成功状态-->
+                <span class="state">已确认</span>
+            </h3>
+            <p>委托交易已确认完成，等待券商下单。</p>
+            <!--注释得为成功状态-->
+            <button class="login-btn">进入服务</button>
+        </div>
+    </section>
+    <p class="tip">操作中有任何问题请联系券商助手或致电：<a href="tel:021-12345678">021-12345678</a></p>
+
+</div>
+<script src="../js/isWeiXin.js"></script>
+<script src="../lib/jquery-2.1.1.min.js"></script>
+<script src="../lib/layer.js"></script>
+<script src="../js/biaogu.js"></script>
+
+</body>
+</html>
